@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ma.negpm</groupId>
+  <artifactId>ModeleEnergetique</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>ModeleEnergetique</name>
+  <description>Le logiciel Modèle énergétique est une application qui permettra à NEGPM le calcul de l'énergie non livré du parc éolien Midelt Wind Farm au réseau national.</description>
+  
+  <modules>
+  	<module>ModeleEnergetique-domain</module>
+  	<module>ModeleEnergetique-persistence</module>
+  	<module>ModeleEnergetique-web</module>
+  	<module>ModeleEnergetique-service</module>
+  	<module>ModeleEnergetique-batch</module>
+  </modules>
+  
+  <properties>
+  </properties>
+  
+  <parent>
+  	<groupId>org.springframework.boot</groupId>
+  	<artifactId>spring-boot-starter-parent</artifactId>
+  	<version>1.4.2.RELEASE</version>
+  	<relativePath/>
+  </parent>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-data-jpa</artifactId>
+  	</dependency>
+  </dependencies>
+  
+</project>
